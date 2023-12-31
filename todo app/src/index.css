@@ -22,15 +22,16 @@ h2 {
 .container input{
     width: 300px;
     height: 15px;
-    border: 2px solid #494eea;
+    border: 2px solid rgba(154, 154, 154, 0.857);
     outline: 0;
     padding: 10px;
     margin: 10px 0 20px;
-    /* border-radius: 5px; */
+    margin-left: 10%;
     display: inline-block;
+    border-radius: 5px;
 }
 .add-btn{
-    background-color: #BF3131;
+    background-color: black;
     color: white;
     padding: 10px;
     outline: none;
@@ -38,6 +39,10 @@ h2 {
     border-radius: 5px;
     margin-left: 5px;
     cursor: pointer; 
+}
+.add-btn:active {
+    background-color: rgba(57, 56, 56, 0.939);
+    transform: scale(0.95);
 }
 
 .dlt-btn {
@@ -47,10 +52,11 @@ h2 {
     outline: none;
     border: none;
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 200px;
     cursor: pointer;
     /* transition: 2s; */
 }
+
 .edit-btn {
     background-color: #11009E;
     color: white;
@@ -60,7 +66,7 @@ h2 {
     border-radius: 5px;
     margin-left: 5px;
     cursor: pointer;
-    /* transition: 2s; */
+  
 }
 
 
@@ -73,10 +79,11 @@ h2 {
     background-color: #4942E4;
     transform: scale(0.95);
 }
-
+ 
 
 
 
 /* .dlt-btn:hover{
         background-color: #299e77;
-        } */
+        }
+

@@ -34,17 +34,18 @@ function deleteTodo(index) {
 
 function updateTodo(index) {
   const updatedText = prompt('Update Todo', todo[index]);
-  if (updatedText !== '') {
+  if (updatedText === '') {
+    alert('Please enter something')
+    
+  }else{
     const updatedTodos = [...todo];
     updatedTodos[index] = updatedText;
     setTodo(updatedTodos)
-  }else{
-    alert('Please enter something')
   }
 }
   return (
     <>
-      <h2>Todo App </h2>
+      <h2>React Todo App </h2>
       <div className="container">
       <form onSubmit={addTodo}>
         <input type="text" placeholder='Enter your text' onChange={(e)=>setText(e.target.value)} value={text}/>
@@ -55,8 +56,8 @@ function updateTodo(index) {
       { <ul>
         {todo.map((item, index)=>{
           return <li key={index}>{item}
-          <button className='dlt-btn' onClick={()=>deleteTodo(index)}>delete</button><span> </span>
-          <button className='edit-btn' onClick={()=>updateTodo(index)}>edit</button><br></br><hr></hr>
+          <button className='dlt-btn' onClick={()=>deleteTodo(index)}><i class="fa-solid fa-trash-arrow-up"></i> </button>
+          <button className='edit-btn' onClick={()=>updateTodo(index)}><i class="fa-solid fa-pencil"></i> </button><br></br><hr></hr>
           </li>
         })}
       </ul> }
