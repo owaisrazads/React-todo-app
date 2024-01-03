@@ -23,10 +23,14 @@ function addTodo(event) {
 
 //function delete Todo
 
+
+
 function deleteTodo(index) {
   const deleteTodo = [...todo];
   deleteTodo.splice(index, 1)
   setTodo(deleteTodo)
+
+  
 }
 
 

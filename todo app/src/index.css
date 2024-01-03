@@ -12,12 +12,15 @@ h2 {
     text-align: center;
 }
 
-.container{
-    /* margin-left: 40%; */
+/* .container{
+    
     width: 100%;
     align-items: center;
     justify-content: center;
     
+} */
+.container{
+    text-align: center;
 }
 .container input{
     width: 300px;
@@ -26,7 +29,7 @@ h2 {
     outline: 0;
     padding: 10px;
     margin: 10px 0 20px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     display: inline-block;
     border-radius: 5px;
 }
@@ -44,28 +47,35 @@ h2 {
     background-color: rgba(57, 56, 56, 0.939);
     transform: scale(0.95);
 }
-
+/* ul li{
+    text-align: center;
+    text-decoration: none;
+} */
 .dlt-btn {
     background-color: #BF3131;
     color: white;
-    padding: 5px 7px;
+    font-size: 14px;
+    /* padding: 5px 7px; */
     outline: none;
     border: none;
     border-radius: 5px;
     margin-left: 200px;
     cursor: pointer;
+    padding: 10px 15px;
     /* transition: 2s; */
 }
 
 .edit-btn {
     background-color: #11009E;
     color: white;
-    padding: 5px 7px;
+    /* padding: 5px 7px; */
     outline: none;
     border: none;
     border-radius: 5px;
     margin-left: 5px;
     cursor: pointer;
+    padding: 10px 15px;
+
   
 }
 
@@ -83,7 +93,25 @@ h2 {
 
 
 
-/* .dlt-btn:hover{
-        background-color: #299e77;
-        }
-
+@media(max-width: 400px){
+    .container input{
+        background-color: rgb(148, 237, 240);
+        width: 160px;
+        height: 15px;
+        border: 1px solid rgba(154, 154, 154, 0.857);
+        outline: 0;
+        padding: 10px;
+        margin: 10px 0 20px;  
+    }
+    .dlt-btn {
+        background-color: #BF3131;
+        color: white;
+        padding: 5px 7px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        margin-left: 100px;
+        cursor: pointer;
+        /* transition: 2s; */
+    }
+}
